@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fcf9f5;
+  background-color: #fdfafc;
   color: #333333;
   line-height: 1.6;
 }
@@ -21,7 +21,7 @@ header {
   background-color: #ffffff;
   text-align: center;
   padding: 40px 20px;
-  border-bottom: 2px solid #f2e3d5;
+  border-bottom: 2px solid #fce4ec;
 }
 
 header h1 {
@@ -74,7 +74,7 @@ header p {
   margin-bottom: 35px;
 }
 
-/* GRID Y TARJETAS CÓLICAS Y PASTEL */
+/* GRID Y TARJETAS FUCSIA */
 .grid-valores {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -82,26 +82,27 @@ header p {
 }
 
 .tarjeta-valor {
-  background-color: #fff9f5; /* Tono crema / durazno pastel suave */
-  border: 2px solid #f2d6c6;  /* Borde delicado */
+  background-color: #ffffff;
+  border: 2px solid #f8bbd0; /* Borde rosa/fucsia suave */
   border-radius: 16px;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 12px rgba(230, 0, 103, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tarjeta-valor:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(224, 122, 95, 0.15);
+  border-color: #e60067;
+  box-shadow: 0 8px 20px rgba(230, 0, 103, 0.18);
 }
 
 .numero-valor {
   display: inline-block;
   font-size: 1rem;
   font-weight: bold;
-  color: #e07a5f;            /* Coral cálido que resalta */
-  background-color: #fde2e4;  /* Fondo rosita suave */
-  padding: 4px 12px;
+  color: #ffffff;             /* Texto blanco */
+  background-color: #e60067;  /* Fucsia vibrante */
+  padding: 4px 14px;
   border-radius: 20px;
   margin-bottom: 12px;
 }
@@ -114,7 +115,7 @@ header p {
 
 .tarjeta-valor p {
   font-size: 0.95rem;
-  color: #666666;
+  color: #555555;
 }
 
 /* ==========================================
@@ -144,11 +145,12 @@ header p {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tarjeta-producto:hover {
   transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(230, 0, 103, 0.12);
 }
 
 .tarjeta-producto img {
@@ -178,7 +180,7 @@ footer {
   text-align: center;
   padding: 50px 20px 30px 20px;
   margin-top: 80px;
-  border-top: 2px solid #f2e3d5;
+  border-top: 2px solid #fce4ec;
 }
 
 footer h2 {
@@ -194,18 +196,19 @@ footer p {
 
 .btn-instagram {
   display: inline-block;
-  background-color: #e07a5f;
+  background-color: #e60067; /* Fucsia vibrante */
   color: #ffffff;
   padding: 12px 28px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .btn-instagram:hover {
-  background-color: #d0694e;
+  background-color: #c20056; /* Fucsia un poquito más oscuro al pasar el mouse */
+  transform: scale(1.03);
 }
 
 .copyright {
