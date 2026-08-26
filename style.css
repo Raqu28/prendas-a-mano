@@ -9,19 +9,24 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fdfafc;
+  background-color: #fffafc;
   color: #333333;
   line-height: 1.6;
+
+  /* MARCA DE AGUA: FLORES Y SALPICADURAS DE PINTURA (SUAVE) */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 100 100'><g fill='%23e60067' fill-opacity='0.05'><!-- Flor 1 --><circle cx='30' cy='30' r='6'/><circle cx='30' cy='20' r='5'/><circle cx='30' cy='40' r='5'/><circle cx='20' cy='30' r='5'/><circle cx='40' cy='30' r='5'/><!-- Flor 2 --><circle cx='75' cy='75' r='5'/><circle cx='75' cy='67' r='4'/><circle cx='75' cy='83' r='4'/><circle cx='67' cy='75' r='4'/><circle cx='83' cy='75' r='4'/><!-- Manchas de pintura --><circle cx='70' cy='25' r='4'/><circle cx='78' cy='20' r='2'/><circle cx='65' cy='32' r='1.5'/><circle cx='25' cy='75' r='5'/><circle cx='18' cy='82' r='2.5'/><circle cx='32' cy='80' r='1.5'/><path d='M85,35 Q90,38 88,42 Q82,40 85,35 Z'/></g></svg>");
+  background-repeat: repeat;
 }
 
 /* ==========================================
    2. ENCABEZADO (HEADER)
    ========================================== */
 header {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   text-align: center;
   padding: 40px 20px;
   border-bottom: 2px solid #fce4ec;
+  backdrop-filter: blur(5px);
 }
 
 header h1 {
@@ -74,7 +79,7 @@ header p {
   margin-bottom: 35px;
 }
 
-/* GRID Y TARJETAS FUCSIA Lleno */
+/* GRID Y TARJETAS FUCSIA */
 .grid-valores {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -82,7 +87,7 @@ header p {
 }
 
 .tarjeta-valor {
-  background-color: #e60067; /* Fondo fucsia completo */
+  background-color: #e60067;
   border-radius: 16px;
   padding: 24px;
   box-shadow: 0 6px 16px rgba(230, 0, 103, 0.25);
@@ -98,8 +103,8 @@ header p {
   display: inline-block;
   font-size: 1rem;
   font-weight: bold;
-  color: #e60067;             /* Texto fucsia */
-  background-color: #ffffff;  /* Pastilla blanca para resaltar */
+  color: #e60067;
+  background-color: #ffffff;
   padding: 4px 14px;
   border-radius: 20px;
   margin-bottom: 12px;
@@ -107,13 +112,13 @@ header p {
 
 .tarjeta-valor h3 {
   font-size: 1.25rem;
-  color: #ffffff;             /* Título en blanco */
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .tarjeta-valor p {
   font-size: 0.95rem;
-  color: #fce4ec;             /* Texto en rosa clarito para excelente lectura */
+  color: #fce4ec;
 }
 
 /* ==========================================
@@ -174,7 +179,7 @@ header p {
    6. PIE DE PÁGINA (FOOTER)
    ========================================== */
 footer {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   text-align: center;
   padding: 50px 20px 30px 20px;
   margin-top: 80px;
