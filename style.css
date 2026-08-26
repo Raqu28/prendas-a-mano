@@ -47,6 +47,73 @@ header p {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Sección Sobre Mí / Información */
+.sobre-mi {
+  padding: 3rem 1.5rem;
+  background-color: #f3f0ec;
+  margin-bottom: 2rem;
+}
+
+.contenedor-sobre-mi {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sobre-mi h2 {
+  font-size: 2rem;
+  color: #2a2a2a;
+  margin-bottom: 0.5rem;
+}
+
+.bajada-sobre-mi {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 750px;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* Grid de Tarjetas de Valores */
+.grid-valores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta-valor {
+  background-color: #ffffff;
+  padding: 1.8rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-valor:hover {
+  transform: translateY(-3px);
+}
+
+.numero-valor {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #999;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.tarjeta-valor h3 {
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  margin-bottom: 0.6rem;
+}
+
+.tarjeta-valor p {
+  font-size: 0.92rem;
+  color: #666;
+  line-height: 1.5;
+}
+
 /* Galería y Cuadrícula de Productos */
 .productos {
   max-width: 1100px;
