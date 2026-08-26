@@ -74,7 +74,7 @@ header p {
   margin-bottom: 35px;
 }
 
-/* GRID Y TARJETAS FUCSIA */
+/* GRID Y TARJETAS FUCSIA Lleno */
 .grid-valores {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -82,26 +82,24 @@ header p {
 }
 
 .tarjeta-valor {
-  background-color: #ffffff;
-  border: 2px solid #f8bbd0; /* Borde rosa/fucsia suave */
+  background-color: #e60067; /* Fondo fucsia completo */
   border-radius: 16px;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(230, 0, 103, 0.06);
+  box-shadow: 0 6px 16px rgba(230, 0, 103, 0.25);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tarjeta-valor:hover {
   transform: translateY(-5px);
-  border-color: #e60067;
-  box-shadow: 0 8px 20px rgba(230, 0, 103, 0.18);
+  box-shadow: 0 10px 24px rgba(230, 0, 103, 0.4);
 }
 
 .numero-valor {
   display: inline-block;
   font-size: 1rem;
   font-weight: bold;
-  color: #ffffff;             /* Texto blanco */
-  background-color: #e60067;  /* Fucsia vibrante */
+  color: #e60067;             /* Texto fucsia */
+  background-color: #ffffff;  /* Pastilla blanca para resaltar */
   padding: 4px 14px;
   border-radius: 20px;
   margin-bottom: 12px;
@@ -109,13 +107,13 @@ header p {
 
 .tarjeta-valor h3 {
   font-size: 1.25rem;
-  color: #2b2d42;
+  color: #ffffff;             /* Título en blanco */
   margin-bottom: 10px;
 }
 
 .tarjeta-valor p {
   font-size: 0.95rem;
-  color: #555555;
+  color: #fce4ec;             /* Texto en rosa clarito para excelente lectura */
 }
 
 /* ==========================================
@@ -150,7 +148,7 @@ header p {
 
 .tarjeta-producto:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(230, 0, 103, 0.12);
+  box-shadow: 0 8px 20px rgba(230, 0, 103, 0.15);
 }
 
 .tarjeta-producto img {
@@ -196,7 +194,7 @@ footer p {
 
 .btn-instagram {
   display: inline-block;
-  background-color: #e60067; /* Fucsia vibrante */
+  background-color: #e60067;
   color: #ffffff;
   padding: 12px 28px;
   border-radius: 25px;
@@ -207,7 +205,7 @@ footer p {
 }
 
 .btn-instagram:hover {
-  background-color: #c20056; /* Fucsia un poquito más oscuro al pasar el mouse */
+  background-color: #c20056;
   transform: scale(1.03);
 }
 
