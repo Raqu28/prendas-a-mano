@@ -1,42 +1,47 @@
-/* Configuración general */
+/* ==========================================
+   1. ESTILOS GENERALES Y RESET
+   ========================================== */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #fcf9f5;
+  color: #333333;
   line-height: 1.6;
 }
 
-/* Encabezado */
+/* ==========================================
+   2. ENCABEZADO (HEADER)
+   ========================================== */
 header {
   background-color: #ffffff;
   text-align: center;
-  padding: 2.5rem 1rem;
-  border-bottom: 2px solid #eaeaea;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  padding: 40px 20px;
+  border-bottom: 2px solid #f2e3d5;
 }
 
 header h1 {
-  font-size: 2.2rem;
-  color: #2b2b2b;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: #2b2d42;
+  margin-bottom: 8px;
 }
 
 header p {
   font-size: 1.1rem;
-  color: #666;
+  color: #6c757d;
 }
 
-/* Banner Promocional */
+/* ==========================================
+   3. BANNER PROMOCIONAL
+   ========================================== */
 .promocion {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -44,113 +49,108 @@ header p {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Sección Sobre Mí / Información */
+/* ==========================================
+   4. SECCIÓN SOBRE EL PROYECTO
+   ========================================== */
 .sobre-mi {
-  padding: 3rem 1.5rem;
-  background-color: #f3f0ec;
-  margin-bottom: 2rem;
-}
-
-.contenedor-sobre-mi {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
-.sobre-mi h2 {
+.contenedor-sobre-mi h2 {
   font-size: 2rem;
-  color: #2a2a2a;
-  margin-bottom: 0.5rem;
+  color: #2b2d42;
+  margin-bottom: 12px;
 }
 
 .bajada-sobre-mi {
   font-size: 1.1rem;
-  color: #555;
-  max-width: 750px;
-  margin-bottom: 2.5rem;
-  line-height: 1.6;
+  color: #555555;
+  max-width: 800px;
+  margin-bottom: 35px;
 }
 
-/* Grid de Tarjetas de Valores */
+/* GRID Y TARJETAS CÓLICAS Y PASTEL */
 .grid-valores {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  gap: 20px;
 }
 
 .tarjeta-valor {
-  background-color: #ffffff;
-  padding: 1.8rem 1.5rem;
+  background-color: #fff9f5; /* Tono crema / durazno pastel suave */
+  border: 2px solid #f2d6c6;  /* Borde delicado */
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tarjeta-valor:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(224, 122, 95, 0.15);
 }
 
 .numero-valor {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #999;
-  margin-bottom: 1rem;
-  display: block;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e07a5f;            /* Coral cálido que resalta */
+  background-color: #fde2e4;  /* Fondo rosita suave */
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
 }
 
 .tarjeta-valor h3 {
   font-size: 1.25rem;
-  color: #1a1a1a;
-  margin-bottom: 0.6rem;
+  color: #2b2d42;
+  margin-bottom: 10px;
 }
 
 .tarjeta-valor p {
-  font-size: 0.92rem;
-  color: #666;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  color: #666666;
 }
 
-/* Galería y Cuadrícula de Productos */
+/* ==========================================
+   5. GALERÍA DE PRODUCTOS Y PROCESOS
+   ========================================== */
 .productos {
   max-width: 1100px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 .productos h2 {
+  font-size: 2rem;
+  color: #2b2d42;
   text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  color: #2b2b2b;
+  margin-bottom: 40px;
 }
 
 .grid-productos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
-/* Tarjeta individual de producto */
 .tarjeta-producto {
   background-color: #ffffff;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
 }
 
 .tarjeta-producto:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
-/* Ajuste y tamaño uniforme para TODAS las fotos */
 .tarjeta-producto img {
   width: 100%;
   height: 280px;
@@ -159,55 +159,57 @@ header p {
 }
 
 .tarjeta-producto h3 {
-  font-size: 1.1rem;
-  padding: 1rem 1rem 0.3rem 1rem;
-  color: #222;
+  font-size: 1.2rem;
+  color: #2b2d42;
+  padding: 16px 16px 6px 16px;
 }
 
 .tarjeta-producto p {
-  font-size: 0.9rem;
-  color: #666;
-  padding: 0 1rem 1.2rem 1rem;
-  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #666666;
+  padding: 0 16px 20px 16px;
 }
 
-/* Pie de página y contacto */
+/* ==========================================
+   6. PIE DE PÁGINA (FOOTER)
+   ========================================== */
 footer {
   background-color: #ffffff;
   text-align: center;
-  padding: 3rem 1rem;
-  margin-top: 3rem;
-  border-top: 1px solid #eaeaea;
+  padding: 50px 20px 30px 20px;
+  margin-top: 80px;
+  border-top: 2px solid #f2e3d5;
 }
 
 footer h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: #2b2d42;
+  margin-bottom: 10px;
 }
 
 footer p {
-  color: #666;
-  margin-bottom: 1.2rem;
+  color: #666666;
+  margin-bottom: 20px;
 }
 
 .btn-instagram {
   display: inline-block;
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  color: white;
-  padding: 0.8rem 1.8rem;
+  background-color: #e07a5f;
+  color: #ffffff;
+  padding: 12px 28px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: opacity 0.2s ease;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
 }
 
 .btn-instagram:hover {
-  opacity: 0.9;
+  background-color: #d0694e;
 }
 
 .copyright {
-  margin-top: 2rem;
+  margin-top: 40px;
   font-size: 0.85rem;
-  color: #aaa;
+  color: #a0a0a0;
 }
