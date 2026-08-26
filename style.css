@@ -22,7 +22,7 @@ body {
 }
 
 /* ==========================================
-   2. ENCABEZADO (HEADER MODIFICADO)
+   2. ENCABEZADO (HEADER)
    ========================================== */
 header {
   background-color: rgba(255, 255, 255, 0.95);
@@ -32,18 +32,16 @@ header {
   backdrop-filter: blur(5px);
 }
 
-/* Título Principal estilizado */
 header h1 {
   font-family: 'Fredoka', cursive, sans-serif;
   font-size: 3.2rem;
   font-weight: 700;
-  color: #e60067; /* Fucsia vibrante */
+  color: #e60067;
   letter-spacing: 1px;
   margin-bottom: 6px;
   text-shadow: 2px 2px 0px #fce4ec;
 }
 
-/* Subtítulo estilizado */
 header p {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.25rem;
@@ -163,11 +161,13 @@ header p {
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #fce4ec;
 }
 
 .tarjeta-producto:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(230, 0, 103, 0.15);
+  border-color: #e60067;
 }
 
 .tarjeta-producto img {
@@ -177,16 +177,21 @@ header p {
   display: block;
 }
 
+/* Títulos debajo de cada imagen con tipografía estilizada */
 .tarjeta-producto h3 {
   font-family: 'Fredoka', cursive, sans-serif;
-  font-size: 1.3rem;
-  color: #2b2d42;
-  padding: 16px 16px 6px 16px;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #e60067; /* Fucsia para destacar los nombres de los trabajos */
+  padding: 16px 16px 4px 16px;
 }
 
+/* Descripciones debajo del título */
 .tarjeta-producto p {
+  font-family: 'Quicksand', sans-serif;
   font-size: 0.95rem;
-  color: #666666;
+  font-weight: 500;
+  color: #555555;
   padding: 0 16px 20px 16px;
 }
 
@@ -209,6 +214,7 @@ footer h2 {
 }
 
 footer p {
+  font-family: 'Quicksand', sans-serif;
   color: #666666;
   margin-bottom: 20px;
 }
@@ -220,8 +226,8 @@ footer p {
   padding: 12px 28px;
   border-radius: 25px;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.05rem;
+  font-family: 'Fredoka', cursive, sans-serif;
+  font-size: 1.1rem;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
