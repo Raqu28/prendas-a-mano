@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prendas a Mano - Indumentaria Ilustrada</title>
+  <title>Prendas Dibujadas a Mano - Indumentaria Ilustrada</title>
   <link rel="stylesheet" href="estilo.css">
+  <!-- Tipografía decorativa para encabezados -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  
   <style>
     /* RESET Y ESTILOS GENERALES */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Quicksand', Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #fff0f5;
@@ -16,8 +21,22 @@
     }
     header {
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px 20px 20px;
       background: #fff;
+    }
+    header h1 {
+      font-family: 'Fredoka', cursive, sans-serif;
+      color: #ff4081; /* Fucsia */
+      font-size: 2.8rem;
+      margin: 0 0 10px 0;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-family: 'Quicksand', sans-serif;
+      color: #e91e63; /* Fucsia secundario */
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 0;
     }
 
     /* CONTROL DE TAMAÑO DE IMÁGENES */
@@ -43,6 +62,10 @@
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
+    }
+    .contenedor-sobre-mi h2, .productos h2 {
+      font-family: 'Fredoka', cursive, sans-serif;
+      color: #333;
     }
     .grid-valores {
       display: grid;
@@ -92,6 +115,7 @@
       object-fit: cover;
     }
     .tarjeta-producto h3 {
+      font-family: 'Fredoka', cursive, sans-serif;
       padding: 15px 15px 5px 15px;
       margin: 0;
       color: #ff4081;
@@ -110,6 +134,10 @@
       background: #fff;
       margin-top: 50px;
     }
+    footer h2 {
+      font-family: 'Fredoka', cursive, sans-serif;
+      color: #333;
+    }
     .btn-instagram {
       display: inline-block;
       padding: 12px 24px;
@@ -119,6 +147,16 @@
       border-radius: 25px;
       font-weight: bold;
       margin-top: 15px;
+    }
+    .agradecimiento {
+      margin-top: 30px;
+      font-weight: bold;
+      color: #ff4081;
+    }
+    .copyright {
+      color: #888;
+      font-size: 0.85rem;
+      margin-top: 5px;
     }
   </style>
 </head>
@@ -233,6 +271,8 @@
     <h2>Hacé tu pedido personalizado</h2>
     <p>Consultá por talles, prendas y diseños a pedido a través de mi Instagram:</p>
     <a href="https://instagram.com/prendas.a.mano" target="_blank" class="btn-instagram">Ver más en @prendas.a.mano</a>
+    
+    <p class="agradecimiento">¡Gracias por apoyar el arte independiente y artesanal!</p>
     <p class="copyright">&copy; Prendas a Mano - Todos los derechos reservados</p>
   </footer>
 
