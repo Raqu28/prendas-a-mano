@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prendas Dibujadas a Mano - Indumentaria Ilustrada</title>
+  <title>Prendas a Mano - Indumentaria Ilustrada</title>
   <link rel="stylesheet" href="estilo.css">
   <!-- Tipografía decorativa para encabezados -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -133,12 +133,27 @@
       font-size: 0.9rem;
     }
 
-    /* PIE DE PÁGINA */
+    /* PIE DE PÁGINA CON QR */
     footer {
       text-align: center;
       padding: 40px 20px;
       background: #fff;
       margin-top: 50px;
+    }
+    .qr-contenedor {
+      margin: 20px auto 10px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .qr-contenedor img {
+      width: 170px;
+      height: 170px;
+      border: 3px solid #ffd1dc;
+      border-radius: 16px;
+      padding: 10px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
     .btn-instagram {
       display: inline-block;
@@ -178,7 +193,7 @@
   <!-- SECCIÓN SOBRE LA MARCA -->
   <section class="sobre-mi">
     <div class="contenedor-sobre-mi">
-      <h2>Sobre mi proyecto</h2>
+      <h2>Sobre el estudio</h2>
       <p class="bajada-sobre-mi">Transformo indumentaria en piezas de arte textil únicas. Cada prenda atraviesa un proceso artesanal riguroso, combinando ilustración original, materiales de alta calidad y técnicas de fijación térmica para garantizar durabilidad.</p>
       
       <div class="grid-valores">
@@ -190,7 +205,7 @@
         <div class="tarjeta-valor">
           <span class="numero-valor">02</span>
           <h3>Diseño Exclusivo</h3>
-          <p>Desarrollo conceptos propios y personalizados adaptando estilos que van desde la estética Kawaii y Pop Art hasta el arte gótico.</p>
+          <p>Desarrollo conceptos propios y personalizados, adaptando estilos que van desde la estética Kawaii y Pop Art hasta el arte gótico.</p>
         </div>
         <div class="tarjeta-valor">
           <span class="numero-valor">03</span>
@@ -270,10 +285,16 @@
   <!-- PIE DE PÁGINA -->
   <footer>
     <h2>Hacé tu pedido personalizado</h2>
-    <p>Consultá por talles, prendas y diseños a pedido a través de mi Instagram:</p>
+    <p>Escaneá el código QR o ingresá a mi Instagram para ver más modelos o realizar tu encargo:</p>
+    
+    <div class="qr-contenedor">
+      <img src="qr-instagram.png" alt="Código QR Instagram @prendas.a.mano">
+    </div>
+
     <a href="https://instagram.com/prendas.a.mano" target="_blank" class="btn-instagram">Ver más en @prendas.a.mano</a>
     
-    <p class="agradecimiento">¡Gracias por apoyar el arte independiente!</p>
+    <p class="agradecimiento">¡Gracias por apoyar el arte independiente y artesanal!</p>
+    <p class="copyright">&copy; Prendas a Mano - Todos los derechos reservados</p>
   </footer>
 
 </body>
